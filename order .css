@@ -1,0 +1,157 @@
+/* ===== Global ===== */
+body {
+    background-color: #0b0b0f; /* پس‌زمینه شبانه */
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Header ===== */
+header {
+    font-family: "Pacifico", cursive;
+    text-align: center;
+    font-size: 45px;
+    padding-top: 40px;
+}
+
+header a {
+    color: #7b2cff;
+    text-decoration: none;
+    text-shadow: 0 0 15px rgba(123, 44, 255, 0.7);
+}
+
+/* ===== Navigation ===== */
+nav {
+    background-color: #111827;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 179, 255, 0.3);
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(135deg, #7b2cff, #00b3ff);
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: linear-gradient(135deg, #ff2fa0, #7b2cff);
+    box-shadow: 0 0 10px #ff2fa0;
+}
+
+/* ===== Container ===== */
+.Container {
+    width: 400px;
+    background-color: #111827;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 0 30px rgba(123, 44, 255, 0.6);
+}
+
+/* ===== Titles ===== */
+h1#title {
+    text-align: center;
+    font-size: 30px;
+    color: #00b3ff;
+    text-shadow: 0 0 10px rgba(0, 179, 255, 0.6);
+}
+
+p#description {
+    text-align: center;
+    font-size: 15px;
+    color: #cccccc;
+}
+
+/* ===== Inputs ===== */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea[name="comments"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #7b2cff;
+    background-color: #0b0b0f;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(123, 44, 255, 0.4);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea[name="comments"]:focus,
+select:focus {
+    outline: none;
+    border: 2px solid #ff2fa0;
+    box-shadow: 0 0 15px #ff2fa0;
+}
+
+/* ===== Radio Buttons ===== */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* ===== Submit Button ===== */
+button.submit {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #00b3ff, #7b2cff);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.submit:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff2fa0;
+}
+
+/* ===== Link Button ===== */
+.link {
+    height: 55px;
+    width: 220px;
+    margin: 30px auto;
+    background: linear-gradient(135deg, #7b2cff, #00b3ff);
+    border-radius: 30px;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 55px;
+    transition: 0.3s;
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.link:hover {
+    box-shadow: 0 0 20px #00b3ff;
+    transform: scale(1.05);
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #111827;
+    color: #cccccc;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 40px;
+}

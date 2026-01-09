@@ -1,0 +1,157 @@
+/* ===== Global ===== */
+body {
+    background-color: #0b0b0f;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* ===== Navigation ===== */
+nav {
+    background-color: #111827;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 179, 255, 0.3);
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(135deg, #7b2cff, #00b3ff);
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: linear-gradient(135deg, #ff2fa0, #7b2cff);
+    box-shadow: 0 0 10px #ff2fa0;
+}
+
+/* ===== Header ===== */
+header {
+    font-family: "Pacifico", cursive;
+    text-align: center;
+    font-size: 45px;
+    padding-top: 40px;
+}
+
+header a {
+    color: #7b2cff;
+    text-decoration: none;
+    text-shadow: 0 0 15px rgba(123, 44, 255, 0.7);
+}
+
+/* ===== Gallery Container ===== */
+.gallery-row {
+    margin: 80px auto;
+    background-color: #111827;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 90%;
+    border-radius: 25px;
+    padding: 80px ;
+    box-shadow: 0 0 40px rgba(123, 44, 255, 0.3);
+}
+
+/* ===== Rows ===== */
+.row {
+    display: flex;
+    gap: 25px;
+    padding: 40px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ===== Images ===== */
+.gallery-img {
+    width: 220px;
+    padding: 10px;
+    margin: 6px;
+    background-color: #0b0b0f;
+    border-radius: 20px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00b3ff;
+}
+
+.gallery-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* ===== Overlay Text ===== */
+.gallery-img .gallery-img-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 0;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    border-radius: 0 0 20px 20px;
+}
+
+.gallery-img:hover .gallery-img-name {
+    visibility: visible;
+}
+
+.gallery-img-name {
+    text-align: center;
+    font-size: 18px;
+    color: #00b3ff;
+}
+
+/* ===== Video ===== */
+.video {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.video video {
+    width: 70%;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(123, 44, 255, 0.6);
+}
+
+/* ===== Button Link ===== */
+.link {
+    height: 55px;
+    width: 220px;
+    margin: 40px auto;
+    background: linear-gradient(135deg, #00b3ff, #7b2cff);
+    border-radius: 30px;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 55px;
+    transition: 0.3s;
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.link:hover {
+    box-shadow: 0 0 20px #00b3ff;
+    transform: scale(1.05);
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #111827;
+    color: #cccccc;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}

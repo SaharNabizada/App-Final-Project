@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Concert Ticket Order</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="order .css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="Gallery.html">Gallery</a>
+        <a href="About.html">About</a>
+        <a href="Order.html">Tickets</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+
+    <header>
+        <a href="index.html">Silver Night Concert</a>
+    </header>
+
+    <div class="Container">
+
+        <h1 id="title">🎟️ Concert Ticket Order Form 🎶</h1>
+        <p id="description">Please fill out this form to reserve your concert tickets</p>
+
+        <div>
+            <label for="full-name">Full Name</label>
+            <input id="full-name" type="text" placeholder="Sahar Nabizada" name="full-name" required>
+
+            <label for="email">Email Address</label>
+            <input id="email" type="email" placeholder="example@gmail.com" name="email-address" required>
+
+            <label for="tickets">How many tickets would you like to buy?</label>
+            <input id="tickets" type="number" name="tickets" min="1" max="10">
+
+            <label for="dropdown">Select your city</label>
+            <div>
+                <select id="dropdown" name="city">
+                    <option value="kabul">New York</option>
+                    <option value="bamyan">los angeles</option>
+                    <option value="mazar">chicago</option>
+                    <option value="norestan">houston</option>
+                </select>
+            </div>
+
+            <label>Choose your ticket type</label>
+            <div>
+                <input id="vip" type="radio" name="ticket-type" value="VIP">
+                <label for="vip">VIP Ticket</label>
+
+                <input id="gold" type="radio" name="ticket-type" value="Gold">
+                <label for="gold">Gold Ticket</label>
+
+                <input id="silver" type="radio" name="ticket-type" value="Silver">
+                <label for="silver">Silver Ticket</label>
+
+                <input id="student" type="radio" name="ticket-type" value="Student">
+                <label for="student">Student Ticket</label>
+            </div>
+
+            <label for="comments">Additional Notes</label>
+            <textarea id="comments" name="comments" placeholder="Any special requests..."></textarea>
+
+            <button class="submit" type="submit">Confirm Order</button>
+        </div>
+
+        <div class="link">
+            <a href="contact.html">Go to contact</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p> 2026 Silver Night Concert | Designed by Sahar Nabizada</p>
+    </footer>
+
+</body>
+</html>
